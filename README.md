@@ -79,11 +79,17 @@ Modules that are used in the activities:
 This project was created in Android Studio.
 
 To assembly this project you need to create new project in Android Studio with Kotlin programming language.
+
 Then you need to paste all layout files (https://github.com/EgorPy/SchoolTimetable/tree/master/app/src/main/res/layout) to the project in this directory: app/res/layout # This is needed to create pages of the app.
+
 Then you need to paste menu file (https://github.com/EgorPy/SchoolTimetable/tree/master/app/src/main/res/menu) to the project in this directory: app/res/menu # This is needed to create popup menu for the app.
+
 Then you need to paste all drawable files (https://github.com/EgorPy/SchoolTimetable/tree/master/app/src/main/res/drawable) to the project in this directory: app/res/drawable # This is needed to get all images, that are used in this app.
+
 Then you need to paste all mipmap files (https://github.com/EgorPy/SchoolTimetable/tree/master/app/src/main/res/mipmap-anydpi-v26) to the project in this directory: app/res/mipmap # This is needed to set icon of the app.
+
 Then you need to paste manifest file (https://github.com/EgorPy/SchoolTimetable/blob/master/app/src/main/AndroidManifest.xml) to the project in this directory: app/manifests # This is needed to configure app.
+
 Then you need to paste all of the Kotlin code for every page of the app (https://github.com/EgorPy/SchoolTimetable/tree/master/app/src/main/java/com/example/schooltimetable) to the project in this directory: app/java/com.example.schooltimetable.
 
 This app was tested on Pixel 2 API 30 Android 11.0 and Artel Tesla API 29 Android 10.0
