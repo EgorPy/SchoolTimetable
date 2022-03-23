@@ -1,0 +1,1623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/CreateTimetableTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#3F51B5"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="Create timetable"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="34sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/SubjectsSectionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#03A9F4"
+                    android:text="Subjects"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/GradesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2196F3"
+                    android:text="Grade 1"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/SubjectsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#A5E3FF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#A5E3FF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/AddSubjectButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#2196F3"
+                                android:text="Add subject"
+                                android:textColor="#FFFFFF" />
+
+                            <Button
+                                android:id="@+id/RemoveSubjectButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="#2196F3"
+                                android:text="Remove subject"
+                                android:textColor="#FFFFFF" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:visibility="gone">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/SubjectsLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#A5E3FF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#A5E3FF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/AddSubjectButton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Add subject" />
+
+                            <Button
+                                android:id="@+id/RemoveSubjectButton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Remove subject" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:visibility="gone">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/SubjectsLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#A5E3FF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#A5E3FF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/AddSubjectButton3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Add subject" />
+
+                            <Button
+                                android:id="@+id/RemoveSubjectButton3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Remove subject" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:visibility="gone">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/SubjectsLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#A5E3FF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#A5E3FF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/AddSubjectButton4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Add subject" />
+
+                            <Button
+                                android:id="@+id/RemoveSubjectButton4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Remove subject" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:visibility="gone">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/SubjectsLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#A5E3FF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#A5E3FF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/AddSubjectButton5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Add subject" />
+
+                            <Button
+                                android:id="@+id/RemoveSubjectButton5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Remove subject" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:visibility="gone">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/SubjectsLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#A5E3FF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#A5E3FF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/AddSubjectButton6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Add subject" />
+
+                            <Button
+                                android:id="@+id/RemoveSubjectButton6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Remove subject" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:visibility="gone">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/SubjectsLayout7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#A5E3FF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#A5E3FF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/AddSubjectButton7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Add subject" />
+
+                            <Button
+                                android:id="@+id/RemoveSubjectButton7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Remove subject" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:visibility="gone">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/SubjectsLayout8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#A5E3FF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#A5E3FF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/AddSubjectButton8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Add subject" />
+
+                            <Button
+                                android:id="@+id/RemoveSubjectButton8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Remove subject" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:visibility="gone">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/SubjectsLayout9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#A5E3FF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#A5E3FF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/AddSubjectButton9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Add subject" />
+
+                            <Button
+                                android:id="@+id/RemoveSubjectButton9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Remove subject" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:visibility="gone">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/SubjectsLayout10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#A5E3FF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#A5E3FF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/AddSubjectButton10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Add subject" />
+
+                            <Button
+                                android:id="@+id/RemoveSubjectButton10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Remove subject" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:visibility="gone">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/SubjectsLayout11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#A5E3FF"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#A5E3FF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/AddSubjectButton11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Add subject" />
+
+                            <Button
+                                android:id="@+id/RemoveSubjectButton11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:text="Remove subject" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/EnterSubjectsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2196F3"
+                    android:text="Enter Subjects"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/NumberOfGradesSectionText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#03A9F4"
+                    android:text="Number of grades"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#A5E3FF"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextGrade"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:hint="grade 1"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextGrade2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:hint="grade 2"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextGrade3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:hint="grade 3"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextGrade4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:hint="grade 4"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextGrade5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:hint="grade 5"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextGrade6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:hint="grade 6"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextGrade7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:hint="grade 7"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextGrade8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:hint="grade 8"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextGrade9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:hint="grade 9"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextGrade10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:hint="grade 10"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/editTextGrade11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:hint="grade 11"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TeachersTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TeachersSectionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#03A9F4"
+                    android:text="Teachers"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TeachersLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#A5E3FF"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/TeachersVerticalLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CallScheduleTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/CallScheduleSectionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#03A9F4"
+                    android:text="Lessons schedule"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CallScheduleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#A5E3FF">
+
+                    <TableLayout
+                        android:id="@+id/LessonsScheduleTable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:text="№"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/StartOfLessonText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:text="Start of lesson"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/EndOfLessonText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:text="End of lesson"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/BrakeTimeText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:text="Break time"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lessonText1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/startTime1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="8:00"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/endTime1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="8:45"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/brakeTime1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="2"
+                                android:text="10"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lessonText2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/startTime2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="8:55"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/endTime2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="9:40"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/brakeTime2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="2"
+                                android:text="10"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lessonText3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="3"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/startTime3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="9:50"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/endTime3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="10:35"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/brakeTime3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="2"
+                                android:text="15"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lessonText4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="4"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/startTime4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="10:50"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/endTime4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="11:35"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/brakeTime4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="2"
+                                android:text="10"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lessonText5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="5"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/startTime5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="11:45"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/endTime5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="12:30"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/brakeTime5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="2"
+                                android:text="10"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lessonText6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="6"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/startTime6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="12:40"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/endTime6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="13:25"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/brakeTime6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="2"
+                                android:text="10"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lessonText7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="7"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/startTime7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="13:35"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/endTime7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="14:15"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/brakeTime7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="2"
+                                android:text="10"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lessonText8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="8"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/startTime8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="14:25"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/endTime8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="15:05"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/brakeTime8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="2"
+                                android:text="10"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lessonText9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="9"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/startTime9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="15:15"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/endTime9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="15:55"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/brakeTime9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="2"
+                                android:text="5"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lessonText10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="10"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/startTime10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="16:00"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/endTime10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="16:40"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/brakeTime10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="2"
+                                android:text="5"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lessonText11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="11"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/startTime11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="16:45"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/endTime11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#000000"
+                                android:maxLength="5"
+                                android:text="17:25"
+                                android:textAlignment="center"
+                                android:textColor="#000000"
+                                android:textColorHint="#555555"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ViewTimetableSectionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#03A9F4"
+                    android:text="View timetable"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/GenerateTimetableButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2196F3"
+                    android:text="Generate Timetable"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#A5E3FF">
+
+                    <LinearLayout
+                        android:id="@+id/TimetableLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#cccccc"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SaveToGallerySelectButtonsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#A5E3FF"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/PrevClassButton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2196F3"
+                    android:padding="0dp"
+                    android:text="previous class"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/ClassText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1A"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/NextClassButton"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2196F3"
+                    android:padding="0dp"
+                    android:text="next class"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TakeScreenshotButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#A5E3FF"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/TakeScreenshotButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#2196F3"
+                    android:text="Save To Gallery"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SaveTimetableTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#A5E3FF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/SaveTimetableText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Save Timetable"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SaveTimetableViewsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#A5E3FF"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/TimetableNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#000000"
+                        android:ems="10"
+                        android:hint="Timetable name"
+                        android:inputType="textPersonName"
+                        android:maxLength="30"
+                        android:textColor="#000000"
+                        android:textColorHint="#555555" />
+
+                    <Button
+                        android:id="@+id/SaveTimetableButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#2196F3"
+                        android:text="Save Timetable"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

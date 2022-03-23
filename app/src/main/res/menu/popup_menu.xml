@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/grade1"
+        android:title="Grade 1" />
+    <item
+        android:id="@+id/grade2"
+        android:title="Grade 2" />
+    <item
+        android:id="@+id/grade3"
+        android:title="Grade 3" />
+    <item
+        android:id="@+id/grade4"
+        android:title="Grade 4" />
+    <item
+        android:id="@+id/grade5"
+        android:title="Grade 5" />
+    <item
+        android:id="@+id/grade6"
+        android:title="Grade 6" />
+    <item
+        android:id="@+id/grade7"
+        android:title="Grade 7" />
+    <item
+        android:id="@+id/grade8"
+        android:title="Grade 8" />
+    <item
+        android:id="@+id/grade9"
+        android:title="Grade 9" />
+    <item
+        android:id="@+id/grade10"
+        android:title="Grade 10" />
+    <item
+        android:id="@+id/grade11"
+        android:title="Grade 11" />
+
+</menu>

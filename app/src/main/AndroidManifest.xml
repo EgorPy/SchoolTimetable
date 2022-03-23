@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.schooltimetable">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SchoolTimetable">
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".GuideActivity10"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".GuideActivity9"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".GuideActivity8"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".GuideActivity7"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".GuideActivity6"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".GuideActivity5"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".GuideActivity4"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".GuideActivity3"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".GuideActivity2"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".GuideActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".MyCanvasActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".CreateNewTimetableActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
