@@ -1,5 +1,6 @@
-package com.example.schooltimetable
+package com.application.schooltimetable
 
+import android.annotation.SuppressLint
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Color
@@ -12,6 +13,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.application.schooltimetable.R
 import java.util.*
 
 
@@ -21,6 +23,7 @@ class MyCanvasActivity : AppCompatActivity() {
     private lateinit var imageView: ImageView
     private lateinit var b: Bitmap
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_canvas)

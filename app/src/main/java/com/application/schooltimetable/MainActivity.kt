@@ -1,4 +1,4 @@
-package com.example.schooltimetable
+package com.application.schooltimetable
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -12,6 +12,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.graphics.drawable.toDrawable
+import com.application.schooltimetable.R
 import java.io.*
 
 var language = "EN"

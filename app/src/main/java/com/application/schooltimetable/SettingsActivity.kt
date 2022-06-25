@@ -1,10 +1,11 @@
-package com.example.schooltimetable
+package com.application.schooltimetable
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import com.application.schooltimetable.R
 
 class SettingsActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.schooltimetable">
+    package="com.application.schooltimetable">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -12,59 +12,59 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SchoolTimetable">
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.application.schooltimetable.SettingsActivity"
             android:exported="false"
             android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".GuideActivity10"
+            android:name="com.application.schooltimetable.GuideActivity10"
             android:exported="false"
             android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".GuideActivity9"
+            android:name="com.application.schooltimetable.GuideActivity9"
             android:exported="false"
             android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".GuideActivity8"
+            android:name="com.application.schooltimetable.GuideActivity8"
             android:exported="false"
             android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".GuideActivity7"
+            android:name="com.application.schooltimetable.GuideActivity7"
             android:exported="false"
             android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".GuideActivity6"
+            android:name="com.application.schooltimetable.GuideActivity6"
             android:exported="false"
             android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".GuideActivity5"
+            android:name="com.application.schooltimetable.GuideActivity5"
             android:exported="false"
             android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".GuideActivity4"
+            android:name="com.application.schooltimetable.GuideActivity4"
             android:exported="false"
             android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".GuideActivity3"
+            android:name="com.application.schooltimetable.GuideActivity3"
             android:exported="false"
             android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".GuideActivity2"
+            android:name="com.application.schooltimetable.GuideActivity2"
             android:exported="false"
             android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".GuideActivity"
+            android:name="com.application.schooltimetable.GuideActivity"
             android:exported="false"
             android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".MyCanvasActivity"
+            android:name="com.application.schooltimetable.MyCanvasActivity"
             android:exported="false"
             android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".CreateNewTimetableActivity"
+            android:name="com.application.schooltimetable.CreateNewTimetableActivity"
             android:exported="false"
             android:screenOrientation="sensorPortrait" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.application.schooltimetable.MainActivity"
             android:exported="true"
             android:screenOrientation="sensorPortrait">
             <intent-filter>

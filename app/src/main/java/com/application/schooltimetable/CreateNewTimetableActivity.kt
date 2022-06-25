@@ -1,4 +1,4 @@
-package com.example.schooltimetable
+package com.application.schooltimetable
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -13,8 +13,8 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.graphics.drawable.toDrawable
+import com.application.schooltimetable.R
 import com.google.android.material.textfield.TextInputEditText
-import java.io.IOException
 import java.lang.Integer.parseInt
 import java.text.DateFormat.getDateInstance
 import java.util.*
@@ -787,18 +787,12 @@ class CreateNewTimetableActivity : AppCompatActivity() {
                 numberOfEveryGrade.removeAll(numberOfEveryGrade)
 
                 // adding number of every grade from grades edit texts to numberOfEveryGrade list
-                try {
-                    for (i in gradesEditTexts) {
-                        if (i.text.toString() != "") {
-                            numberOfEveryGrade.add(parseInt(i.text.toString()))
-                        } else {
-                            numberOfEveryGrade.add(1)
-                        }
+                for (i in gradesEditTexts) {
+                    try {
+                        numberOfEveryGrade.add(parseInt(i.text.toString()))
+                    } catch (e: NumberFormatException) {
+                        numberOfEveryGrade.add(1)
                     }
-                } catch (e: IndexOutOfBoundsException) {
-                    e.printStackTrace()
-                } catch (e: NumberFormatException) {
-                    e.printStackTrace()
                 }
 
                 val timetable = TableLayout(this)
@@ -1079,14 +1073,28 @@ class CreateNewTimetableActivity : AppCompatActivity() {
                 classroomsList.removeAll(classroomsList)
                 subjectsList.removeAll(subjectsList)
 
+                numberOfEveryGrade.removeAll(numberOfEveryGrade)
+                // adding number of every grade from grades edit texts to numberOfEveryGrade list
+                for (i in gradesEditTexts) {
+                    try {
+                        numberOfEveryGrade.add(parseInt(i.text.toString()))
+                    } catch (e: NumberFormatException) {
+                        numberOfEveryGrade.add(1)
+                    }
+                }
+
                 for (week_day in 0 until daysInWeek) {
                     classroomsList.add(mutableListOf())
                     for (lesson in 0 until maxNumberOfLessons) {
                         classroomsList[week_day].add(mutableListOf())
                         for (grade in 0 until numberOfGrades) {
                             classroomsList[week_day][lesson].add(mutableListOf())
-                            for (grade_letter in 0 until numberOfEveryGrade[grade]) {
-                                classroomsList[week_day][lesson][grade].add(classroomViewsList[week_day][lesson][grade][grade_letter].text.toString())
+                            try {
+                                for (grade_letter in 0 until numberOfEveryGrade[grade]) {
+                                    classroomsList[week_day][lesson][grade].add(classroomViewsList[week_day][lesson][grade][grade_letter].text.toString())
+                                }
+                            } catch (e: IndexOutOfBoundsException) {
+
                             }
                         }
                     }
@@ -1097,8 +1105,12 @@ class CreateNewTimetableActivity : AppCompatActivity() {
                         subjectsList[week_day].add(mutableListOf())
                         for (grade in 0 until numberOfGrades) {
                             subjectsList[week_day][lesson].add(mutableListOf())
-                            for (grade_letter in 0 until numberOfEveryGrade[grade]) {
-                                subjectsList[week_day][lesson][grade].add(subjectViewsList[week_day][lesson][grade][grade_letter].text.toString())
+                            try {
+                                for (grade_letter in 0 until numberOfEveryGrade[grade]) {
+                                    subjectsList[week_day][lesson][grade].add(subjectViewsList[week_day][lesson][grade][grade_letter].text.toString())
+                                }
+                            } catch (e: IndexOutOfBoundsException) {
+
                             }
                         }
                     }
@@ -1127,18 +1139,12 @@ class CreateNewTimetableActivity : AppCompatActivity() {
                     // resetting lists
                     numberOfEveryGrade.removeAll(numberOfEveryGrade)
                     // adding number of every grade from grades edit texts to numberOfEveryGrade list
-                    try {
-                        for (i in gradesEditTexts) {
-                            if (i.text.toString() != "") {
-                                numberOfEveryGrade.add(parseInt(i.text.toString()))
-                            } else {
-                                numberOfEveryGrade.add(1)
-                            }
+                    for (i in gradesEditTexts) {
+                        try {
+                            numberOfEveryGrade.add(parseInt(i.text.toString()))
+                        } catch (e: NumberFormatException) {
+                            numberOfEveryGrade.add(1)
                         }
-                    } catch (e: IndexOutOfBoundsException) {
-                        e.printStackTrace()
-                    } catch (e: NumberFormatException) {
-                        e.printStackTrace()
                     }
 
                     // what I need to save:
@@ -2160,18 +2166,12 @@ class CreateNewTimetableActivity : AppCompatActivity() {
                 numberOfEveryGrade.removeAll(numberOfEveryGrade)
 
                 // adding number of every grade from grades edit texts to numberOfEveryGrade list
-                try {
-                    for (i in gradesEditTexts) {
-                        if (i.text.toString() != "") {
-                            numberOfEveryGrade.add(parseInt(i.text.toString()))
-                        } else {
-                            numberOfEveryGrade.add(1)
-                        }
+                for (i in gradesEditTexts) {
+                    try {
+                        numberOfEveryGrade.add(parseInt(i.text.toString()))
+                    } catch (e: NumberFormatException) {
+                        numberOfEveryGrade.add(1)
                     }
-                } catch (e: IndexOutOfBoundsException) {
-                    e.printStackTrace()
-                } catch (e: NumberFormatException) {
-                    e.printStackTrace()
                 }
 
                 val timetable = TableLayout(this)
@@ -2418,18 +2418,12 @@ class CreateNewTimetableActivity : AppCompatActivity() {
                 numberOfEveryGrade.removeAll(numberOfEveryGrade)
 
                 // adding number of every grade from grades edit texts to numberOfEveryGrade list
-                try {
-                    for (i in gradesEditTexts) {
-                        if (i.text.toString() != "") {
-                            numberOfEveryGrade.add(parseInt(i.text.toString()))
-                        } else {
-                            numberOfEveryGrade.add(1)
-                        }
+                for (i in gradesEditTexts) {
+                    try {
+                        numberOfEveryGrade.add(parseInt(i.text.toString()))
+                    } catch (e: NumberFormatException) {
+                        numberOfEveryGrade.add(1)
                     }
-                } catch (e: IndexOutOfBoundsException) {
-                    e.printStackTrace()
-                } catch (e: NumberFormatException) {
-                    e.printStackTrace()
                 }
 
                 val timetable = TableLayout(this)

@@ -1,4 +1,4 @@
-package com.example.schooltimetable
+package com.application.schooltimetable
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import com.application.schooltimetable.R
 
 class GuideActivity9 : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
