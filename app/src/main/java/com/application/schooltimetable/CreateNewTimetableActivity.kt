@@ -13,7 +13,6 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.graphics.drawable.toDrawable
-import com.application.schooltimetable.R
 import com.google.android.material.textfield.TextInputEditText
 import java.lang.Integer.parseInt
 import java.text.DateFormat.getDateInstance

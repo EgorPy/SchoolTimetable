@@ -12,10 +12,10 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.graphics.drawable.toDrawable
-import com.application.schooltimetable.R
 import java.io.*
+import java.util.*
 
-var language = "EN"
+var language = Locale.getDefault().language.uppercase()
 
 var timetablesCount = 0
 var timetableNames = mutableListOf<String>()
